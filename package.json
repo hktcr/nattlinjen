@@ -1,0 +1,17 @@
+{
+  "name": "nattlinjen",
+  "private": true,
+  "version": "0.6.0",
+  "description": "Nattlinjen – privat spelprototyp",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node qa/core-test.cjs && node qa/test-guides.cjs && node qa/display-test.cjs && node qa/css-structure-test.cjs && node qa/scene-test.cjs",
+    "start": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "build": "python3 scripts/build.py"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}
