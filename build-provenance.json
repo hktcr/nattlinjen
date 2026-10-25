@@ -1,0 +1,114 @@
+{
+  "game": "Nattlinjen",
+  "status": "Arbetsversion",
+  "source_repository": "hktcr/nattlinjen",
+  "source_branch": "dev/b7-world-native",
+  "source_commit": "d9d50a89d3d909bdb0f9272b66bc82887272889d",
+  "scope": "K01 experimental scene-native presentation; 21 other task presentations still being redesigned. Whole-game review in progress.",
+  "runtime_files": [
+    {
+      "path": "app.js",
+      "git_blob_sha": "c84549df70aa867cf9aec6950e0ee23fb1380c6a"
+    },
+    {
+      "path": "campaign/SCHEMA.md",
+      "git_blob_sha": "dee6d1ed0497f1a54e24a9b17720fe16165cef1a"
+    },
+    {
+      "path": "campaign/art/atelier.png",
+      "git_blob_sha": "c2b8187084a1115f623f9ac3631cc8fcbef956dc"
+    },
+    {
+      "path": "campaign/art/courier-walk-b8.png",
+      "git_blob_sha": "40a2dbd2631bf9bed9b9c3169560eb9b15da83e4"
+    },
+    {
+      "path": "campaign/art/harbor-walk-b7.png",
+      "git_blob_sha": "848aa297c62d64f6c1389831a60df54d6a99f423"
+    },
+    {
+      "path": "campaign/art/packing-table-b7.png",
+      "git_blob_sha": "bf3a818d53ca311fb49c711715df248e67222816"
+    },
+    {
+      "path": "campaign/art/ship-workshop.png",
+      "git_blob_sha": "9a7cd63c05dbafe9336b3e3b9571cfe4b811a648"
+    },
+    {
+      "path": "campaign/art/sunset-gathering.png",
+      "git_blob_sha": "fc216f3cc555c005b14afc5fd3df81bae7b4261f"
+    },
+    {
+      "path": "campaign/art/working-quay.png",
+      "git_blob_sha": "992eb75c912bbe660d003fdc76851f666aedee4a"
+    },
+    {
+      "path": "campaign/background.js",
+      "git_blob_sha": "7fb464fe913abf1357885348a557678fc6fb50ea"
+    },
+    {
+      "path": "campaign/chapters-01-03.js",
+      "git_blob_sha": "01e19c5c9afb0b6c00a4151831bd5a14034b99fd"
+    },
+    {
+      "path": "campaign/chapters-04-06.js",
+      "git_blob_sha": "6057060b10bcc8c0a20ad4df90d4bdea58e68853"
+    },
+    {
+      "path": "campaign/chapters-07-08.js",
+      "git_blob_sha": "e6e95bcc4bae2dd643b78a75b9c40adc40e73921"
+    },
+    {
+      "path": "campaign/core.js",
+      "git_blob_sha": "78c44c210329085f56bece47fe2e19bf257503c0"
+    },
+    {
+      "path": "campaign/engine.js",
+      "git_blob_sha": "2360146d07e9c8d6019196996f4a45fc8be22b7e"
+    },
+    {
+      "path": "campaign/guides.js",
+      "git_blob_sha": "4b61348b5468e867d336b6f1a5bbd8d4e9e73f71"
+    },
+    {
+      "path": "campaign/scenes.js",
+      "git_blob_sha": "4daf9a75c935c49e27a7beda19b51c85765f731e"
+    },
+    {
+      "path": "cinematic-harbor.png",
+      "git_blob_sha": "b8358f37accf768b167a3a543cc5823adac35d66"
+    },
+    {
+      "path": "cinematic.css",
+      "git_blob_sha": "1c3d965f990468619edb760c863645cd03368f64"
+    },
+    {
+      "path": "display.js",
+      "git_blob_sha": "7983c6d3b541dbfbfd8b77fc7add67c1f359d6c3"
+    },
+    {
+      "path": "harbor-departure.svg",
+      "git_blob_sha": "7a183501275209c4a2604e3271f9fb08e2a66ffa"
+    },
+    {
+      "path": "harbor-docked.svg",
+      "git_blob_sha": "3b08f63a9af504ccd1c1e881f23b9d0b73daa241"
+    },
+    {
+      "path": "harbor.svg",
+      "git_blob_sha": "a80a3b905afcc4e8289e6d0facc099c7f28ad833"
+    },
+    {
+      "path": "index.html",
+      "git_blob_sha": "dab03f7b1f10c98cfec154dc4d9a45daf72aa3de"
+    },
+    {
+      "path": "scene.css",
+      "git_blob_sha": "528c75924556e6e06573a9530117f69b0480b5f4"
+    },
+    {
+      "path": "style.css",
+      "git_blob_sha": "ad6249fef6e4eb84e919dce3ad0b8ac379925373"
+    }
+  ]
+}
