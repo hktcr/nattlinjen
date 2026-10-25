@@ -1,7 +1,7 @@
 'use strict';
 // Shared pure helpers and transaction contract. No network or external actions.
 function N(value){
- const raw=String(value??'');if(raw.length>300)return null;const s=raw.trim().replace(',','.');if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:\/[+-]?(?:\d+(?:\.\d*)?|\.\d+))?$/.test(s))return null;
+ const raw=String(value??'');if(raw.length>300)return null;const s=raw.trim().replaceAll('−','-').replace(',','.');if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:\/[+-]?(?:\d+(?:\.\d*)?|\.\d+))?$/.test(s))return null;
  // Compare each decimal token with its Number's canonical decimal value.
  // This preserves 9,0 and 0.1 but refuses silently rounded long input.
  const decimal=text=>{const [mantissa,expText='0']=text.toLowerCase().split('e'),exp=Number(expText);const sign=mantissa.startsWith('-')?-1n:1n;const [whole,frac='']=mantissa.replace(/^[+-]/,'').split('.');let n=sign*BigInt((whole||'0')+frac),d=10n**BigInt(frac.length);if(exp>=0)n*=10n**BigInt(exp);else d*=10n**BigInt(-exp);return [n,d];};
