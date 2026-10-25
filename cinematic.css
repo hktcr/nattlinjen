@@ -104,3 +104,33 @@ body:has(.world-native) .world-backdrop:after{background:linear-gradient(0deg,#0
 /* Repair for browser-observed defect: tape is a background, never painted over numerals.
    Specific crate selector wins over the legacy recipient-color shorthand. */
 .world-native .scene-instrument .world-crate{background:repeating-linear-gradient(0deg,#3d2c1de0 0 30px,#8b613a 31px 33px)}
+
+/* B8: the walk is one full-bleed world, never a framed picture over another harbor.
+   Camera phases are driven by the same explicit model state as the clock. */
+.world-native .crate-contents .scene-package{grid-column:auto}
+body[data-task="K01-U03"]:has(.world-native) .world-backdrop{background-image:url('campaign/art/harbor-walk-b7.png');background-size:auto 100%;background-position:left center;background-repeat:no-repeat;background-color:#13212c}
+body[data-task="K01-U03"]:has([data-walk-location="yard"]) .world-backdrop{background-position:45% center}
+body[data-task="K01-U03"]:has([data-walk-location="quay-path"]) .world-backdrop,body[data-task="K01-U03"]:has([data-walk-location="quay"]) .world-backdrop{background-position:right center}
+body[data-task="K01-U03"]:has(.world-native) .world-backdrop:after{background:linear-gradient(180deg,#07131b99,transparent 42%,#07131b2b 65%,#07131bd9),linear-gradient(90deg,#07131b66,transparent 65%)}
+body[data-task="K01-U03"] .world-native .departure-world{grid-template-columns:220px minmax(0,1fr);gap:18px 45px;max-width:none;min-height:420px}
+body[data-task="K01-U03"] .harbor-clock,body[data-task="K01-U03"] .harbor-clock svg{width:210px}
+body[data-task="K01-U03"] .harbor-location{height:340px;min-height:340px;background:none;border:0;box-shadow:none;margin-bottom:85px}
+body[data-task="K01-U03"] .harbor-location .walk-traveller{height:170px;width:114px;bottom:15%;filter:drop-shadow(5px 6px 3px #0008)}
+.courier-sprite{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none}
+body[data-task="K01-U03"] .walk-location-title{left:0;top:0;font-size:calc(24px * var(--scale))}
+body[data-task="K01-U03"] .walk-location-instruction{left:0;right:0;bottom:0}
+body[data-task="K01-U03"] .harbor-location .arrival-setting{left:0;right:0}
+body[data-task="K01-U03"] .cinematic-after{min-height:100%;align-items:start}
+body[data-task="K01-U03"] .cinematic-after .departure-world{display:block;min-height:390px}
+body[data-task="K01-U03"] .cinematic-after .harbor-location{height:300px;min-height:300px}
+@media(min-aspect-ratio:3/1){body[data-task="K01-U03"]:has(.world-native) .world-backdrop{background-size:cover}}
+@media(max-width:650px){
+ body[data-task="K01-U03"] .world-native .departure-world{grid-template-columns:1fr;gap:24px;min-height:0}
+ body[data-task="K01-U03"] .harbor-clock{width:100%;display:grid;grid-template-columns:145px minmax(0,1fr);gap:0 16px}
+ body[data-task="K01-U03"] .harbor-clock svg{width:145px;grid-row:1/4}
+ body[data-task="K01-U03"] .harbor-clock output,body[data-task="K01-U03"] .harbor-clock p,body[data-task="K01-U03"] .harbor-clock .departure-setting{grid-column:2}
+ body[data-task="K01-U03"] .harbor-location{height:250px;min-height:250px;margin-bottom:95px}
+ body[data-task="K01-U03"] .harbor-location .walk-traveller{height:135px;width:90px;bottom:18%}
+ body[data-task="K01-U03"] .walk-location-title{font-size:calc(21px * var(--scale))}
+}
+@media(max-width:360px){body[data-task="K01-U03"] .harbor-clock{grid-template-columns:115px minmax(0,1fr);gap:0 12px}body[data-task="K01-U03"] .harbor-clock svg{width:115px}}

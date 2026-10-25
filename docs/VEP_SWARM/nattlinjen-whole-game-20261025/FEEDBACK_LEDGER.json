@@ -1,0 +1,95 @@
+{
+  "scope": "Whole-game feedback ledger; source and runtime evidence are separate. Historical mathematics/state findings will be indexed from original reports; no final completeness claim.",
+  "items": [
+    {
+      "id": "NL-UX-001",
+      "source_kind": "Owner actual screenshot and independent actual desktop UI",
+      "scope": "K01-U01",
+      "finding": "Parcel tape obscured numerals",
+      "decision_status": "implemented and actual-pixel retested",
+      "change": "v7 CSS tape behind text",
+      "retest": "Reviewer v7 screenshot at 17:36:56Z; crisp numerals"
+    },
+    {
+      "id": "NL-UX-002",
+      "source_kind": "Independent actual desktop UI",
+      "scope": "K01-U01",
+      "finding": "Legacy recipient backgrounds replaced wood slats",
+      "decision_status": "implemented and actual-pixel retested",
+      "change": "v7 higher-specificity crate background",
+      "retest": "Reviewer v7 screenshot at 17:36:56Z; wood visible"
+    },
+    {
+      "id": "NL-UX-003",
+      "source_kind": "Independent actual desktop UI and computed style",
+      "scope": "K01-U01",
+      "finding": "Last parcel inherited grid-column 1/-1, wasting row",
+      "decision_status": "implemented locally; runtime retest pending",
+      "change": "B8 grid-column:auto",
+      "retest": "94 scene +35 world deterministic groups pass; no pixels yet"
+    },
+    {
+      "id": "NL-UX-004",
+      "source_kind": "Independent actual desktop UI; parent viewed screenshot",
+      "scope": "K01-U03",
+      "finding": "Inset landscape on different harbor backdrop looked like picture-in-picture",
+      "decision_status": "implemented locally; runtime design retest pending",
+      "change": "B8 one full-bleed panorama with phase-dependent camera; inset removed",
+      "retest": "Source/DOM pass only, actual pixels pending"
+    },
+    {
+      "id": "NL-UX-005",
+      "source_kind": "Parent actual screenshot interpretation",
+      "scope": "K01-U03",
+      "finding": "Flat SVG worker did not match painted environment",
+      "decision_status": "implemented locally; runtime design retest pending",
+      "change": "Generated transparent painterly courier sprite",
+      "retest": "Image alpha inspected; no runtime pixel acceptance yet"
+    },
+    {
+      "id": "NL-UX-006",
+      "source_kind": "Independent source review",
+      "scope": "K01-U02;K04-U02;K07-U02",
+      "finding": "Interactive SVG children inside role=img and used-state focusable no-op controls",
+      "decision_status": "implemented; source/DOM and partial real keyboard retested",
+      "change": "B7-B HTML button siblings and read-only receipt suppression",
+      "retest": "Shared geometry DOM groups pass; actual U02 ArrowRight/R verified; other two actual flows pending"
+    },
+    {
+      "id": "NL-UX-007",
+      "source_kind": "Independent source review",
+      "scope": "K01-U01 mobile",
+      "finding": "Three narrow crate columns and tiny controls",
+      "decision_status": "implemented; actual mobile retest pending",
+      "change": "B7-B single-column mobile crates, larger labels/targets",
+      "retest": "Source breakpoints reviewed only; mobile pixels NOT TESTED"
+    },
+    {
+      "id": "NL-UX-008",
+      "source_kind": "Owner requirement and source audit",
+      "scope": "K02–K08,21 tasks",
+      "finding": "Universal workbench/answer-card compositions remain, not final world-native redesign",
+      "decision_status": "open",
+      "change": "Task-specific redesign pending panel preflight and representative gate",
+      "retest": "Not accepted"
+    },
+    {
+      "id": "NL-UX-009",
+      "source_kind": "Owner design clarification",
+      "scope": "All narrative states",
+      "finding": "Story text must remain, elegantly paced on backdrops rather than opaque cards",
+      "decision_status": "implemented; partial actual review",
+      "change": "B7 paced intro/after/outro/finish with transcripts",
+      "retest": "35 deterministic preservation groups; actual K01 intro/after/outro only"
+    },
+    {
+      "id": "NL-UX-010",
+      "source_kind": "Independent actual desktop UI",
+      "scope": "K01-U01",
+      "finding": "Third crate/actions require scrolling",
+      "decision_status": "open design assessment",
+      "change": "Natural scroll exists; investigate discoverability without shrinking targets",
+      "retest": "Actual1180×757; no claim all content must be above fold"
+    }
+  ]
+}
