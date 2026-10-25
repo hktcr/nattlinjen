@@ -36,3 +36,7 @@ npm run build
 ```
 
 Det kopierar endast runtime-filer till `dist/`; det publicerar ingenting. Servera projektroten eller `dist/` med valfri statisk server. Inga API-nycklar eller serverhemligheter krävs.
+
+## Utvecklingsgren B7-B
+
+Källsnapshot `e3803764f9ecd7a8c2d016622a39c76e650c0561`. Enbart K01:s tre uppgifter har en första omarbetad scenpresentation; övriga 21 uppgifter är fortfarande B6. Berättelsescener har fått uppdelade repliker och friare typografi. Ny packbordsbild är AI-genererad; matematik och etiketter ritas separat i kod. Ingen visuell mobilacceptans eller publicering har skett. Källbaserade designkorrigeringar har granskats; faktisk visuell granskning återstår.
