@@ -1,149 +1,121 @@
 {
   "game": "Nattlinjen",
   "status": "Arbetsversion under granskning",
-  "build_id": "repair-20261025-1",
+  "build_id": "f1-v2-candidate2-20261026",
   "source_repository": "hktcr/nattlinjen",
-  "source_base_commit": "d9d50a89d3d909bdb0f9272b66bc82887272889d",
-  "source_manifest_sha256": "567ef1d450ab7261a4a8b5c6786d44be092e334b6061229178f58f81d6cc49ab",
-  "source_archive_sha256": "7dfb2a37c779baabd7a084608d4bd181012c06417e8cd627cd9f6e79f01ab419",
-  "runtime_manifest_sha256": "92d5c00dae54601af5a8cd200a226d7e8a1cf6f22ba58bbb2362ca8dfc125aea",
-  "scope": "Bounded mathematics, guide-navigation, saved-state and status repairs. K01 remains an experimental scene-native prototype;21 other task presentations and meaningful variants remain in development. Native UI and whole-game acceptance remain pending.",
-  "rollback_commit": "2e41721da9e674963b3cb93002517e9bbc927fc6",
+  "source_manifest_sha256": "72d0253ed1e8c1820cf9e664414f7bcfa2eb2017ba26c8dff40d2262b90c0a19",
+  "source_archive_sha256": "38e4b8d5f8922b0284f945bfd35385722114e083434b4fd811eb4d5a75d25c2c",
+  "runtime_manifest_sha256": "8fa12e6ded0c05696169ceb8ef89511dce5ecd526a3178f9636403197b251380",
+  "predecessor_commit": "55c47172d5dc73313a4e231a0ab6583a453aca9f",
+  "scope": "Fixed K01-U01 direct-container interaction, historical display and guide supersession corrections. Other scene presentations and meaningful variants remain in development. Native UI and whole-game acceptance remain pending.",
   "runtime_files": [
     {
       "path": "app.js",
-      "sha256": "f2c32f403251ef25f06d19f109e84f0f4512ccc67675aef122afec832a905e62",
-      "git_blob_sha": "5417116243657a30d173622d66f02d93c4684013"
+      "sha256": "f2c32f403251ef25f06d19f109e84f0f4512ccc67675aef122afec832a905e62"
     },
     {
       "path": "campaign/SCHEMA.md",
-      "sha256": "fb9b13fb614226170a41c3875c7adf882ffa8fd6bc21e2829b4be0640ddaa888",
-      "git_blob_sha": "dee6d1ed0497f1a54e24a9b17720fe16165cef1a"
+      "sha256": "fb9b13fb614226170a41c3875c7adf882ffa8fd6bc21e2829b4be0640ddaa888"
     },
     {
       "path": "campaign/art/atelier.png",
-      "sha256": "7c4fcbf914a1b5f5f523950ee2440820d407f7edee861fb1c3f67dbd698e4c43",
-      "git_blob_sha": "c2b8187084a1115f623f9ac3631cc8fcbef956dc"
+      "sha256": "7c4fcbf914a1b5f5f523950ee2440820d407f7edee861fb1c3f67dbd698e4c43"
     },
     {
       "path": "campaign/art/courier-walk-b8.png",
-      "sha256": "ac50da094b6817efa5bee16b89f0321f7f30b7cd3ed25c325f7281856bd8485a",
-      "git_blob_sha": "40a2dbd2631bf9bed9b9c3169560eb9b15da83e4"
+      "sha256": "ac50da094b6817efa5bee16b89f0321f7f30b7cd3ed25c325f7281856bd8485a"
     },
     {
       "path": "campaign/art/harbor-walk-b7.png",
-      "sha256": "9830e7c0b35e0b4ea88d59afc68b9b5bcee0f961f7a8ea1bff1a17a79249bd99",
-      "git_blob_sha": "848aa297c62d64f6c1389831a60df54d6a99f423"
+      "sha256": "9830e7c0b35e0b4ea88d59afc68b9b5bcee0f961f7a8ea1bff1a17a79249bd99"
     },
     {
       "path": "campaign/art/packing-table-b7.png",
-      "sha256": "8caa877a78b4bd941b6dd7155f0b46478b32c03fd2511bc492dee4af351e9c99",
-      "git_blob_sha": "bf3a818d53ca311fb49c711715df248e67222816"
+      "sha256": "8caa877a78b4bd941b6dd7155f0b46478b32c03fd2511bc492dee4af351e9c99"
     },
     {
       "path": "campaign/art/ship-workshop.png",
-      "sha256": "c0e54da6f57c388be0384e4b746959461fa9d65e39181cc123224ea6ab82026c",
-      "git_blob_sha": "9a7cd63c05dbafe9336b3e3b9571cfe4b811a648"
+      "sha256": "c0e54da6f57c388be0384e4b746959461fa9d65e39181cc123224ea6ab82026c"
     },
     {
       "path": "campaign/art/sunset-gathering.png",
-      "sha256": "0dfe91378c12e3ab2278541986eb3e6d9e7816cb0c861f2a7b76a4e0f74fe67c",
-      "git_blob_sha": "fc216f3cc555c005b14afc5fd3df81bae7b4261f"
+      "sha256": "0dfe91378c12e3ab2278541986eb3e6d9e7816cb0c861f2a7b76a4e0f74fe67c"
     },
     {
       "path": "campaign/art/working-quay.png",
-      "sha256": "c3371a55074b5420c0b45d6de3a121ee1eb046081184ff9a9ff22ac16ab4b404",
-      "git_blob_sha": "992eb75c912bbe660d003fdc76851f666aedee4a"
+      "sha256": "c3371a55074b5420c0b45d6de3a121ee1eb046081184ff9a9ff22ac16ab4b404"
     },
     {
       "path": "campaign/background.js",
-      "sha256": "65429efb68cba978b67557e9ee4557adf030accc19b086ef20f7e384525db57f",
-      "git_blob_sha": "7fb464fe913abf1357885348a557678fc6fb50ea"
+      "sha256": "65429efb68cba978b67557e9ee4557adf030accc19b086ef20f7e384525db57f"
     },
     {
       "path": "campaign/chapters-01-03.js",
-      "sha256": "2c27f253fd136da16271e7de97d63a8ac2c0055c75cbe1670d4771872011a4d9",
-      "git_blob_sha": "fb9c2a50b098953dc7a466725db9320fa990574a"
+      "sha256": "2c27f253fd136da16271e7de97d63a8ac2c0055c75cbe1670d4771872011a4d9"
     },
     {
       "path": "campaign/chapters-04-06.js",
-      "sha256": "37bdd487d19b0b4583609de6659750fd28822dde59e2f92f3bc3de4abb8f1f44",
-      "git_blob_sha": "70078487aa67ea4faee4eeacb05d11b282b15833"
+      "sha256": "37bdd487d19b0b4583609de6659750fd28822dde59e2f92f3bc3de4abb8f1f44"
     },
     {
       "path": "campaign/chapters-07-08.js",
-      "sha256": "5c9862833289e660403eab62ab44e33ff3fe30e122c934b85bf3fc9ecce69d54",
-      "git_blob_sha": "e6e95bcc4bae2dd643b78a75b9c40adc40e73921"
+      "sha256": "5c9862833289e660403eab62ab44e33ff3fe30e122c934b85bf3fc9ecce69d54"
     },
     {
       "path": "campaign/core.js",
-      "sha256": "a418ec0d247c0f39574786cb1f66014b1c91db3a70a7cb185690c321d8b00e3d",
-      "git_blob_sha": "e05463baab4732699986c8cc93c262c246a7ab90"
+      "sha256": "a418ec0d247c0f39574786cb1f66014b1c91db3a70a7cb185690c321d8b00e3d"
     },
     {
       "path": "campaign/engine.js",
-      "sha256": "b2fb209df67227fea3c6c9e93313c0e15d3d28c591aff909d87a2bfecd79632b",
-      "git_blob_sha": "6ffd98cab44dbafed4d667f9c494e5062b95663c"
+      "sha256": "dd81430ef859510107d74198a61f02852d27e8ce4eb22d66d452b2720677fc24"
     },
     {
       "path": "campaign/guides.js",
-      "sha256": "443494bcc4287b411bef5427d09ad3b71a527cf224b169d667905d635958e7e5",
-      "git_blob_sha": "5176ee5ffd5c8ecad03af24a4bf24ac240a213d0"
+      "sha256": "443494bcc4287b411bef5427d09ad3b71a527cf224b169d667905d635958e7e5"
     },
     {
       "path": "campaign/scenes.js",
-      "sha256": "1eee39ff8b3eff86814cda94d20021ea0cbae34f028f2ce95f4cb32f4026e7ab",
-      "git_blob_sha": "7e7ab7a8cf5b060f027182f15072b98a6e86e9ca"
+      "sha256": "26204c6b2e8044bde7e564f5799a41292246fe46053b3877db853e01236ec7d0"
     },
     {
       "path": "campaign/state-validation.js",
-      "sha256": "d5cc0ad0b3b9ece103eb979ec43ba038ad92f6dbc730b3117f4a586144840dc7",
-      "git_blob_sha": "6bdd04ed5b92248585cb589f4ddd6aff6960356a"
+      "sha256": "d5cc0ad0b3b9ece103eb979ec43ba038ad92f6dbc730b3117f4a586144840dc7"
     },
     {
       "path": "cinematic-harbor.png",
-      "sha256": "72831a526375ddf2bf2fee555784b40007c141bf541daa91e1c4a52bd321c6f2",
-      "git_blob_sha": "b8358f37accf768b167a3a543cc5823adac35d66"
+      "sha256": "72831a526375ddf2bf2fee555784b40007c141bf541daa91e1c4a52bd321c6f2"
     },
     {
       "path": "cinematic.css",
-      "sha256": "5b7a3d27833f85d17932d917d8e4769b0ff4cdfeb628b68b13b2ac95c71e6a1d",
-      "git_blob_sha": "1c3d965f990468619edb760c863645cd03368f64"
+      "sha256": "06dfaf520baacd204a0d7e0a51c9b1e0d965099b1db3bee7203b29f9b70522fd"
     },
     {
       "path": "display.js",
-      "sha256": "c4d4e629d5a4aa48d632b3e270249625a8f8a4cb3070582119c8a625169f0891",
-      "git_blob_sha": "7983c6d3b541dbfbfd8b77fc7add67c1f359d6c3"
+      "sha256": "c4d4e629d5a4aa48d632b3e270249625a8f8a4cb3070582119c8a625169f0891"
     },
     {
       "path": "harbor-departure.svg",
-      "sha256": "a25b7300c5cab5cb566d42ddf9e8a630310f328bfcfd3d001f00a75f421bde2b",
-      "git_blob_sha": "7a183501275209c4a2604e3271f9fb08e2a66ffa"
+      "sha256": "a25b7300c5cab5cb566d42ddf9e8a630310f328bfcfd3d001f00a75f421bde2b"
     },
     {
       "path": "harbor-docked.svg",
-      "sha256": "fbd6e9cf3655c1118f20d6495834f03546c5976f03fef72b8250b3b53632acbb",
-      "git_blob_sha": "3b08f63a9af504ccd1c1e881f23b9d0b73daa241"
+      "sha256": "fbd6e9cf3655c1118f20d6495834f03546c5976f03fef72b8250b3b53632acbb"
     },
     {
       "path": "harbor.svg",
-      "sha256": "87a1196917e747db6485fb985cd37c683c3b2ec52179e76e386e990a4a7a5b6c",
-      "git_blob_sha": "a80a3b905afcc4e8289e6d0facc099c7f28ad833"
+      "sha256": "87a1196917e747db6485fb985cd37c683c3b2ec52179e76e386e990a4a7a5b6c"
     },
     {
       "path": "index.html",
-      "sha256": "2711cc6f7c0ac4f9233c67eacc1ccd940c6552c41df594358a162397607e8da5",
-      "git_blob_sha": "1b486d43720bc7c60560b3a567f45a93d2a2a572"
+      "sha256": "2711cc6f7c0ac4f9233c67eacc1ccd940c6552c41df594358a162397607e8da5"
     },
     {
       "path": "scene.css",
-      "sha256": "cbcb147e0f43ed21f1ee7ede18519dc58b625ab92b8f5af0e8ad5e9785b1e631",
-      "git_blob_sha": "528c75924556e6e06573a9530117f69b0480b5f4"
+      "sha256": "cbcb147e0f43ed21f1ee7ede18519dc58b625ab92b8f5af0e8ad5e9785b1e631"
     },
     {
       "path": "style.css",
-      "sha256": "be98460794c3c1ff449a8c2d5b985e6625b57edac56492b651d7531bcaf8a01e",
-      "git_blob_sha": "ad6249fef6e4eb84e919dce3ad0b8ac379925373"
+      "sha256": "be98460794c3c1ff449a8c2d5b985e6625b57edac56492b651d7531bcaf8a01e"
     }
   ]
 }
