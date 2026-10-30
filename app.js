@@ -37,7 +37,10 @@ function legacyRecovery(){document.body.dataset.page='start';$('#main').innerHTM
 function legacyReplayNotice(){return legacyReplay?'<p class="prepared-banner">En läsposition saknades i sparningen. Den berörda delen visas från början; detta är inte en exakt återställd läsposition.</p>':'';}
 readLegacy();
 function save(){saveOK=NattlinjenStorage.write(KEY,state);return saveOK}
-function announce(t){$('#announce').textContent='';requestAnimationFrame(()=>$('#announce').textContent=t)}
+// Supersede queued announcements when feedback changes or its scene is left.
+let announceRevision=0;
+function clearAnnouncement(){announceRevision++;$('#announce').textContent=''}
+function announce(t){clearAnnouncement();const revision=announceRevision;requestAnimationFrame(()=>{if(revision===announceRevision)$('#announce').textContent=t})}
 function safe(t){return String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function settingsApply(){document.body.style.setProperty('--scale',state.settings.size);document.body.classList.toggle('reduce-motion',!!state.settings.motion);document.body.classList.toggle('high-contrast',!!state.settings.contrast)}
 function localVoice(){return 'speechSynthesis'in window?speechSynthesis.getVoices().find(v=>v.localService&&/^sv/i.test(v.lang)):null}

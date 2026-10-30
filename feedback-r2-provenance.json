@@ -1,0 +1,18 @@
+{
+  "candidate": "NATTLINJEN-P80-FEEDBACK-20261030-R2",
+  "baseline": "NATTLINJEN-F1-V2-LOCAL-CANDIDATE-2",
+  "files": {
+    "app.js": "ea41c5b7bc9e8cb6fa1328b0f241337e5855c450e84f037553343858b109468a",
+    "campaign/engine.js": "4cbfded93cf254920c7000b3b544a44271b4442cdf26618459bae4df6f3f883b",
+    "qa/f1-local-test.cjs": "a946eed15041c3526d7b92bb7e113c43c04f0f33194826d42bf9f3dda4e9984b"
+  },
+  "parent_commit": "1b68bac94fdb81fab78aff04aa88302bd8a7b5eb",
+  "status": "development-only; not deployed",
+  "patch_sha256": "fcd3cf4cb332bc740b3c8065f68ff1a4c2605670688702dfd555cd9c7a319c77",
+  "remaining": [
+    "physical mobile/touch",
+    "actual spoken screenreader",
+    "whole-game acceptance",
+    "historical aggregate suite failures"
+  ]
+}
